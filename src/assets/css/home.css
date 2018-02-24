@@ -1,0 +1,238 @@
+.clearfix {
+  zoom: 1
+}
+
+.clearfix:before, .clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden
+}
+
+.clearfix:after {
+  clear: both
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  -webkit-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  text-size-adjust: none;
+  -webkit-tap-highlight-color: transparent;
+  font-weight: normal;
+  font-style: normal
+}
+
+html {
+  line-height: 1;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+}
+
+body {
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+}
+
+ol, ul {
+  list-style: none
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle
+}
+
+q, blockquote {
+  quotes: none
+}
+
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none
+}
+
+a img {
+  border: 0;
+  -webkit-touch-callout: none
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block
+}
+
+a {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  text-decoration: none;
+  color: #333
+}
+
+button, input, textarea, select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none
+}
+
+*, *:after, *:before {
+  box-sizing: border-box
+}
+
+.mui-body{
+  width: 100%;
+  box-flex: 1;
+  -webkit-box-flex: 1;
+  flex: 1;
+}
+.mui-margin-bottom-20 {
+    margin-bottom: 0.4rem;
+}
+
+.mui-padding-10 {
+    padding-top: 0.2rem;
+    padding-left: 0.2rem;
+    padding-bottom: 0.2rem;
+    padding-right: 0.2rem;
+}
+
+.center-header {
+    position: relative;
+    height: 4rem;
+    /*background: url(../assets/images/test/background_user.jpg) 50% 50% no-repeat;*/
+    background: #f4581d;
+  text-align: center;
+}
+.center-userinfo {
+    position: absolute;
+    height: 2.5rem;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+.center-userinfo img {
+    display: inline-block;
+    border-radius: 50%;
+    width: 1.8rem;
+    height: 1.8rem;
+}
+.center-userinfo p {
+    margin-top: 0.1rem;
+    font-size: 0.28rem;
+    line-height: 0.32rem;
+    padding-right: 0;
+    color: #fff;
+}
+
+.mui-grids {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-box-pack: justify;
+    -webkit-box-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-color: #fff;
+    flex-direction: row;
+    flex-flow: wrap;
+}
+.grid{
+  width: 2.5rem;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  height: 2rem;
+  flex-direction: column;
+  justify-content: center;
+}
+.grid:nth-child(3),.grid:nth-child(6){
+  border-right: none;
+}
+.grid > i{
+  font-size: 30px;
+  color: #666;
+}
+.grid.active i,.grid.active p{
+  color: #f4581d;
+}
+
+.grid > .mui-label {
+    line-height: 0.36rem;
+    font-size: 0.26rem;
+    padding-right: 0;
+    position: relative;
+    height: auto;
+    color: #777777;
+    margin-top:0.1rem;
+}
+.mui-grid-3 {
+    width:2.5rem;
+}
+.icon-card {
+    width: .5rem;
+    height: .5rem;
+}
+
+.mui-footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+    height: 50px;
+    color: #666;
+    display: box;
+    display: -webkit-box;
+    display: flex;
+    display: -webkit-flex;
+    background-color: #f3f2f2;
+    box-align: center;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-align-items: center;
+    display: flex;
+}
+.mui-footer a{
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.mui-footer a.active i,.mui-footer a.active .tis{
+  color: #f4581d;
+}
+.mui-footer a i{
+  font-size: 24px;
+}
+.mui-footer .tis {
+    font-size: 0.22rem;
+    height: auto;
+    color: #666;
+}
